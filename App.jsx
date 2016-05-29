@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from './actions/actions'
 
+import Header from './components/Header.jsx'
 import AddTodo from './components/AddTodo.jsx'
 import TodoList from './components/TodoList.jsx'
 
@@ -11,7 +12,7 @@ class App extends Component {
 	
       return (
          <div>
-			
+			   <Header/>
             <AddTodo
                onAddClick = {text =>
                dispatch(addTodo(text))}
