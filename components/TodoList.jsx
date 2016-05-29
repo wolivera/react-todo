@@ -13,19 +13,23 @@ const style = {
 
 export default class TodoList extends Component {
   render() {
-    return (
-      <Paper style={style.paper}>
-        <List>
-          {this.props.todos.map(todo =>
-            <ListItem 
-              id={todo.id}
-              key={todo.id}
-              primaryText={todo.text} 
-              leftCheckbox={<Checkbox />}
-            />
-          )}
-        </List>
-      </Paper>
-    )
+    if(this.props.todos.length > 0){
+      return (
+        <Paper style={style.paper}>
+          <List>
+            {this.props.todos.map(todo =>
+              <ListItem 
+                id={todo.id}
+                key={todo.id}
+                primaryText={todo.text} 
+                leftCheckbox={<Checkbox />}
+              />
+            )}
+          </List>
+        </Paper>
+      )
+    } else {
+      return null;
+    }
   }
 }
