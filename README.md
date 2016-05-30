@@ -1,9 +1,12 @@
-# React TODO
+# React TODO Material
 
+This is an open source web app to create tasks lists (TODOS) built in React framework and combined with Material design. The purpose of this project it's purely experimental. Feel free to download the source code and use it as you wish :)
+
+# State of this project: In progress...
 
 ## TODO TODO
 
-+ Listen enter for adding new items
++ Listen enter key event for adding new items
 + Separe in: Active/Completed
-+ Remove items
++ Push this to a server!
 + Write doc explaining the setup steps
