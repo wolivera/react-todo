@@ -5,7 +5,7 @@ import IconButton from 'material-ui/IconButton';
 const styles = {
   title : {
     'textAlign': 'center',
-	'fontWeight': '100'
+    'fontWeight': '100'
   }
 }
 
